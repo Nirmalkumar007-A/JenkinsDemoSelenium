@@ -28,6 +28,7 @@ public class LinkedInJobSearchAutomation {
         driver.get("https://www.linkedin.com/login");
         System.out.println("launched linkedin");
         driver.manage().window().maximize();
+    	System.out.println("selected");
 
 /*
         try {
