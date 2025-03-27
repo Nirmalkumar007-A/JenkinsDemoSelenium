@@ -3,7 +3,26 @@
   <groupId>jobsearch</groupId>
   <artifactId>testing</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+  <build>
+	<plugins>
+		  <plugin>
+		    <groupId>org.codehaus.mojo</groupId>
+		    <artifactId>exec-maven-plugin</artifactId>
+		    <version>3.1.0</version>
+		    <executions>
+		        <execution>
+		            <goals>
+		                <goal>java</goal>
+		            </goals>
+		        </execution>
+		    </executions>
+		    <configuration>
+		        <mainClass>testing.LinkedInJobSearchAutomation</mainClass>
+		    </configuration>
+		</plugin>
+    </plugins>
+</build>
+
   <dependencies>
  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
