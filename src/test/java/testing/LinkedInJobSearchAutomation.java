@@ -26,6 +26,7 @@ public class LinkedInJobSearchAutomation {
         WebDriver driver = new ChromeDriver();
         WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
         driver.get("https://www.linkedin.com/login");
+        System.out.println("launched linkedin");
         driver.manage().window().maximize();
 
 /*
